@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+/* React Flow overrides */
+.react-flow__node {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  width: auto;
+  font-size: inherit;
+}
+
+.react-flow__edge-path {
+  stroke-width: 2;
+}
+
+.react-flow__handle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #6366f1;
+  border: 2px solid white;
+}
+
+.react-flow__handle:hover {
+  background: #4f46e5;
+  width: 12px;
+  height: 12px;
+}
+
+/* JSON syntax highlighting */
+.json-key { color: #7c3aed; }
+.json-string { color: #059669; }
+.json-number { color: #d97706; }
+.json-boolean { color: #dc2626; }
+.json-null { color: #6b7280; }
+.json-bracket { color: #374151; }
+
+/* Custom scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 3px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Animations */
+@keyframes slideIn {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.slide-in {
+  animation: slideIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.15s ease-out;
+}
